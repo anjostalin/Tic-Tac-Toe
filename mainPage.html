@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="mainStyling.css">
+
+    <title> TIC TAC TOE </title>
+
+</head>
+
+<body background="bg.jpg" onload="changeOptionColor()" id="mainBody">
+
+    <div class="left">
+        <div class="playerBox" style="margin-left: 20px; margin-top: 105px;">
+            <p>Player 1</p>
+            <input type="text" placeholder=" Name" id="playerOneName">
+            <p>Piece Color</p>
+            <select name="playerOneColor" id="playerOneColor" onchange="changeOptionColor()">
+                <option class="honeysuckle" value="honeysuckle">Honeysuckle</option>
+                <option class="sunset" value="sunset">Sunset</option>
+                <option class="ming" value="ming">Ming</option>
+                <option class="cornflower" value="cornflower">Cornflower</option>
+                <option class="fire" value="fire">Fire</option>
+            </select>
+            <br><br><br><br>
+        </div>
+
+        <div class="numberOfRoundsBox">
+            <p>Number of Rounds</p>
+            <select name="numberOfRounds" id="numberOfRounds" onchange="changeOptionColor()">
+                <option class="honeysuckle" value="1">1</option>
+                <option class="cornflower" value="2">2</option>
+                <option class="ming" value="3">3</option>
+                <option class="sunset" value="4">4</option>
+                <option class="fire" value="5">5</option>
+            </select>
+            <br><br><br><br>
+        </div>
+    </div>
+
+    <div class="middle">
+        <div class="gridAndBackgroundBox" style="margin-top: -170px;">
+            <p>Grid Color</p>
+            <select name="gridColor" id="gridColor" onchange="changeOptionColor()">
+                <option class="honeysuckle" value="honeysuckle">Honeysuckle</option>
+                <option class="ming" value="ming">Ming</option>
+                <option class="sunset" value="sunset">Sunset</option>
+                <option class="cornflower" value="cornflower">Cornflower</option>
+                <option class="fire" value="fire">Fire</option>
+            </select>
+            <br><br><br><br>
+        </div>
+
+        <button name="startButton" onclick="startGame()" id="mainButton">START GAME</button>
+    </div>
+
+    <div class="right">
+        <div class="playerBox">
+            <p>Player 2</p>
+            <input type="text" placeholder=" Name" id="playerTwoName">
+            <p>Piece Color</p>
+            <select name="playerTwoColor" id="playerTwoColor" onchange="changeOptionColor()">
+                <option class="honeysuckle" value="honeysuckle">Honeysuckle</option>
+                <option class="fire" value="fire">Fire</option>
+                <option class="sunset" value="sunset">Sunset</option>
+                <option class="ming" value="ming">Ming</option>
+                <option class="cornflower" value="cornflower">Cornflower</option>
+            </select>
+            <br><br><br><br>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="gridAndBackgroundBox" style="margin-left: 90px;">
+            <p>Background Color</p>
+            <select name="backgroundColor" id="backgroundColor" onchange="changeOptionColor()">
+                <option class="honeysuckle" value="honeysuckle">Honeysuckle</option>
+                <option class="cornflower" value="cornflower">Cornflower</option>
+                <option class="sunset" value="sunset">Sunset</option>
+                <option class="ming" value="ming">Ming</option>
+                <option class="fire" value="fire">Fire</option>
+            </select>
+            <br><br><br>
+        </div>
+
+        <br><br><br><br>
+    </div>
+
+    <script type="text/javascript" src="gameScript.js"></script>
+
+</body>
+
+</html>

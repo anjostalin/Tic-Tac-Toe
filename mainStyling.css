@@ -1,0 +1,682 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mainBody {
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.bgBackground {
+    background-image: url('bg.jpg');
+}
+
+.left,
+.middle,
+.right {
+    width: 33.33%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.LEFT,
+.RIGHT {
+    width: 50%;
+    height: 100%;
+    align-content: center;
+}
+
+.playerBox {
+    align-content: center;
+    background-color: #6A6AE3;
+    border-radius: 60px;
+    margin-left: 170px;
+    margin-top: 160px;
+    width: 435px;
+    box-shadow: 0 0 15px 5px rgba(50, 50, 50, 0.5);
+}
+
+.playerBox:hover {
+    cursor: pointer;
+}
+
+.gridAndBackgroundBox {
+    background-color: #6A6AE3;
+    border-radius: 60px;
+    width: 435px;
+    box-shadow: 0 0 15px 5px rgba(50, 50, 50, 0.5);
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+.gridAndBackgroundBox:hover {
+    cursor: pointer;
+}
+
+.numberOfRoundsBox {
+    background-color: #6A6AE3;
+    border-radius: 60px;
+    width: 435px;
+    box-shadow: 0 0 15px 5px rgba(50, 50, 50, 0.5);
+    margin-left: 120px;
+    margin-top: 100px;
+}
+
+.numberOfRoundsBox:hover {
+    cursor: pointer;
+}
+
+
+.tableStyle {
+    padding: 0px;
+    border-spacing: 0px;
+    width: fit-content;
+    height: 200px;
+}
+
+.sunsetTable {
+    background-color: #C94B4B;
+}
+
+.mingTable {
+    background-color: #3B7B7A;
+}
+
+.cornflowerTable {
+    background-color: #8fbdeb;
+}
+
+.honeysuckleTable {
+    background-color: #E3E36A;
+}
+
+.fireTable {
+    background-color: #873e23;
+}
+
+.sunset {
+    background-color: #C94B4B;
+    background-image: url(sunset.jpg);
+}
+
+.ming {
+    background-color: #3B7B7A;
+    background-image: url(ming.jpg);
+}
+
+.cornflower {
+    background-color: #8fbdeb;
+    background-image: url(cornflower.jpg);
+}
+
+.honeysuckle {
+    background-color: #E3E36A;
+    background-image: url(honeysuckle.jpg);
+}
+
+.fire {
+    background-color: #873e23;
+    background-image: url(fire.jpg);
+}
+
+p {
+    padding-top: 25px;
+    text-align: center;
+    font-family: Stencil;
+    font-size: 50px;
+}
+
+input,
+select {
+    background: #f5df4e;
+    font-family: Cooper Black;
+    font-size: 40px;
+    width: 370px;
+    height: 50px;
+}
+
+input {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+select {
+    border: none;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+body {
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#bodyBackground {
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#round {
+    font-family: Impact;
+    width: 400px;
+    height: 2rem;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    margin-left: -3px;
+    margin-top: 10px;
+}
+
+.board {
+    width: 320px;
+    height: 320px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+    background-size: cover;
+    border-radius: 3rem;
+    box-shadow: 0 0 15px 5px rgba(50, 50, 50, 0.5);
+    margin-left: 315px;
+    margin-top: -20px;
+}
+
+#result {
+    font-family: Impact;
+    width: 400px;
+    height: 2rem;
+    font-size: 3rem;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    margin-left: -2px;
+    margin-top: 10px;
+}
+
+#restartButton {
+    background-color: #fa903d;
+    border: none;
+    border-radius: 3rem;
+    font-family: Stencil;
+    font-size: 3rem;
+    padding: 2rem 2rem;
+    box-shadow: 0 0 15px 5px rgba(50, 50, 50, 0.5);
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: -100px;
+}
+
+#restartButton:hover {
+    cursor: pointer;
+    background-color: #df4e31;
+}
+
+button {
+    background-color: #df4e31;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: Elephant;
+    font-size: 1.5rem;
+    padding: 0.7rem 1rem;
+    margin-left: -3px;
+    margin-top: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #fa903d;
+}
+
+#playerOneNameHeading,
+#playerTwoNameHeading,
+#playerOneScore,
+#playerTwoScore {
+    font-family: Impact;
+    width: 400px;
+    height: 2rem;
+    font-size: 4rem;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.sunsetBg {
+    background-image: url(sunsetBg.jpg);
+}
+
+.mingBg {
+    background-image: url(mingBg.jpg);
+}
+
+.cornflowerBg {
+    background-image: url(cornflowerBg.jpg);
+}
+
+.honeysuckleBg {
+    background-image: url(honeysuckleBg.jpg);
+}
+
+.fireBg {
+    background-image: url(fireBg.jpg);
+}
+
+.board:hover {
+    cursor: pointer;
+}
+
+.circleCornflower {
+    background-image: url(circleCornflower.png);
+}
+
+.crossCornflower {
+    background-image: url(crossCornflower.png);
+}
+
+.circleCornflower,
+.crossCornflower {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleFire {
+    background-image: url(circleFire.png);
+}
+
+.crossCornflower {
+    background-image: url(crossCornflower.png);
+}
+
+.circleFire,
+.crossCornflower {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleHoneysuckle {
+    background-image: url(circleHoneysuckle.png);
+}
+
+.crossCornflower {
+    background-image: url(crossCornflower.png);
+}
+
+.circleHoneysuckle,
+.crossCornflower {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleMing {
+    background-image: url(circleMing.png);
+}
+
+.crossCornflower {
+    background-image: url(crossCornflower.png);
+}
+
+.circleMing,
+.crossCornflower {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleSunset {
+    background-image: url(circleSunset.png);
+}
+
+.crossCornflower {
+    background-image: url(crossCornflower.png);
+}
+
+.circleSunset,
+.crossCornflower {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleCornflower {
+    background-image: url(circleCornflower.png);
+}
+
+.crossFire {
+    background-image: url(crossFire.png);
+}
+
+.circleCornflower,
+.crossFire {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleFire {
+    background-image: url(circleFire.png);
+}
+
+.crossFire {
+    background-image: url(crossFire.png);
+}
+
+.circleFire,
+.crossFire {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleHoneysuckle {
+    background-image: url(circleHoneysuckle.png);
+}
+
+.crossFire {
+    background-image: url(crossFire.png);
+}
+
+.circleHoneysuckle,
+.crossFire {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleMing {
+    background-image: url(circleMing.png);
+}
+
+.crossFire {
+    background-image: url(crossFire.png);
+}
+
+.circleMing,
+.crossFire {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleSunset {
+    background-image: url(circleSunset.png);
+}
+
+.crossFire {
+    background-image: url(crossFire.png);
+}
+
+.circleSunset,
+.crossFire {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleFire {
+    background-image: url(circleFire.png);
+}
+
+.crossHoneysuckle {
+    background-image: url(crossHoneysuckle.png);
+}
+
+.circleFire,
+.crossHoneysuckle {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleHoneysuckle {
+    background-image: url(circleHoneysuckle.png);
+}
+
+.crossHoneysuckle {
+    background-image: url(crossHoneysuckle.png);
+}
+
+.circleHoneysuckle,
+.crossHoneysuckle {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleMing {
+    background-image: url(circleMing.png);
+}
+
+.crossHoneysucke {
+    background-image: url(crossHoneysucke.png);
+}
+
+.circleMing,
+.crossHoneysucke {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleSunset {
+    background-image: url(circleSunset.png);
+}
+
+.crossHoneysuckle {
+    background-image: url(crossHoneysuckle.png);
+}
+
+.circleSunset,
+.crossHoneysuckle {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleCornflower {
+    background-image: url(circleCornflower.png);
+}
+
+.crossHoneysuckle {
+    background-image: url(crossHoneysuckle.png);
+}
+
+.circleCornflower,
+.crossHoneysuckle {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleFire {
+    background-image: url(circleFire.png);
+}
+
+.crossMing {
+    background-image: url(crossMing.png);
+}
+
+.circleFire,
+.crossMing {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleHoneysuckle {
+    background-image: url(circleHoneysuckle.png);
+}
+
+.crossMing {
+    background-image: url(crossMing.png);
+}
+
+.circleHoneysuckle,
+.crossMing {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleMing {
+    background-image: url(circleMing.png);
+}
+
+.crossMing {
+    background-image: url(crossMing.png);
+}
+
+.circleMing,
+.crossMing {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleSunset {
+    background-image: url(circleSunset.png);
+}
+
+.crossMing {
+    background-image: url(crossMing.png);
+}
+
+.circleSunset,
+.crossMing {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleCornflower {
+    background-image: url(circleCornflower.png);
+}
+
+.crossMing {
+    background-image: url(crossMing.png);
+}
+
+.circleCornflower,
+.crossMing {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleFire {
+    background-image: url(circleFire.png);
+}
+
+.crossSunset {
+    background-image: url(crossSunset.png);
+}
+
+.circleFire,
+.crossSunset {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleHoneysuckle {
+    background-image: url(circleHoneysuckle.png);
+}
+
+.crossSunset {
+    background-image: url(crossSunset.png);
+}
+
+.circleHoneysuckle,
+.crossSunset {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleMing {
+    background-image: url(circleMing.png);
+}
+
+.crossSunset {
+    background-image: url(crossSunset.png);
+}
+
+.circleMing,
+.crossSunset {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleSunset {
+    background-image: url(circleSunset.png);
+}
+
+.crossSunset {
+    background-image: url(crossSunset.png);
+}
+
+.circleSunset,
+.crossSunset {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circleCornflower {
+    background-image: url(circleCornflower.png);
+}
+
+.crossSunset {
+    background-image: url(crossSunset.png);
+}
+
+.circleCornflower,
+.crossSunset {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mainButton {
+    background-color: #fa903d;
+    border: none;
+    border-radius: 3rem;
+    font-family: Stencil;
+    font-size: 2rem;
+    padding: 2rem 2rem;
+    box-shadow: 0 0 15px 5px rgba(50, 50, 50, 0.5);
+    justify-content: center;
+    margin-left: 60px;
+    margin-top: 370px;
+}
+
+#mainButton:hover {
+    cursor: pointer;
+    background-color: #df4e31;
+}

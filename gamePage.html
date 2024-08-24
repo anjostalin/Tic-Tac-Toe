@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="mainStyling.css">
+
+    <title> TIC TAC TOE </title>
+
+</head>
+
+<body id="bodyBackground" class="bgBackground">
+
+    <div class="LEFT">
+        <font id="round" style="width: fit-content;"></font>
+
+        <br><br><br>
+
+        <section class="board" id="board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </section>
+
+        <br>
+
+        <font id="result" style="width: fit-content;"></font>
+
+        <br><br><br><br><br>
+
+        <button id="restartButton" onclick="restartGameButton()"> Restart Game </button>
+
+        <br>
+
+        <button id="mainMenu" onclick="goToMainMenu()"> Main Menu </button>
+    </div>
+
+    <div class="RIGHT">
+        <table class="tableStyle" id="scoreTable" border="5px">
+            <tr style="text-align: center;">
+                <td id="playerOneNameHeading">
+
+                </td>
+                <td id="playerTwoNameHeading">
+
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td id="playerOneScore">
+
+                </td>
+                <td id="playerTwoScore">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script type="text/javascript" src="gameScript.js"></script>
+
+</body>
+
+</html>
